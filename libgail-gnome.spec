@@ -1,15 +1,15 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
 Summary(pl):	Implementacja u³atwiania pracy niepe³nosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
-Version:	1.0.6
+Version:	1.1.0
 Release:	1
 License:	LGPL
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	7f608132150050f562d6eeadc456fdc2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	61541d3f04741b8a9f42f89776ea1fac
 URL:		http://developer.gnome.org/projects/gap/
 BuildRequires:	at-spi-devel >= 1.1.5-4
-BuildRequires:	atk-devel >= 1.6.0
+BuildRequires:	atk-devel >= 1.7.2
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-panel-devel >= 2.0.0
@@ -17,7 +17,7 @@ BuildRequires:	gtk+2-devel >= 2.1.3-2
 BuildRequires:	libbonoboui-devel >= 2.1.0
 BuildRequires:	libgnomeui-devel >= 2.1.0
 BuildRequires:	libtool
-Requires:	atk >= 1.6.0
+Requires:	atk >= 1.7.2
 Obsoletes:	libgail-gnome-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,7 +36,7 @@ Summary:	Header files to compile applications that use libgail-gnome
 Summary(pl):	Pliki nag³ówkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	atk-devel >= 1.6.0
+Requires:	atk-devel >= 1.7.2
 Requires:	gtk+2-devel >= 2.1.3-2
 Requires:	libbonoboui-devel >= 2.1.0
 
