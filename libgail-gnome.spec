@@ -12,11 +12,13 @@ BuildRequires:	at-spi-devel >= 1.1.5-4
 BuildRequires:	atk-devel >= 1.8.0
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gail-devel
 BuildRequires:	gnome-panel-devel >= 2.0.0
 BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	libbonoboui-devel >= 2.1.0
 BuildRequires:	libgnomeui-devel >= 2.1.0
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 Requires:	atk >= 1.8.0
 Obsoletes:	libgail-gnome-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
