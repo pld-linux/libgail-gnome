@@ -1,12 +1,12 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
 Summary(pl):	Implementacja u³atwiania pracy niepe³nosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
-Version:	1.0.2
-Release:	2
+Version:	1.0.3
+Release:	1
 License:	LGPL
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	a4282efd9827ba4002590e0c442ab77f
+# Source0-md5:	cf05304d646b6d064c7f0c8babda6ab0
 URL:		http://developer.gnome.org/projects/gap/
 BuildRequires:	autoconf
 BuildRequires:	automake
