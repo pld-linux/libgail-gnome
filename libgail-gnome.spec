@@ -18,7 +18,7 @@ BuildRequires:	libbonoboui-devel >= 2.1.0
 BuildRequires:	gail-devel >= 1.1.2
 BuildRequires:	libbonoboui >= 2.1.0
 Requires:	gnome-common >= 1.2.4
-Requires:	atk >= 1,1.0
+Requires:	atk >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix         /usr/X11R6
