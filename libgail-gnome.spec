@@ -37,7 +37,7 @@ Summary:	Header files to compile applications that use libgail-gnome
 Summary(pl):	Pliki nag³ówkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}
-Requires: 	pkgconfig >= 0.14.0
+Requires:	pkgconfig >= 0.14.0
 
 %description devel
 gail-devel contains the header files required to compile applications
