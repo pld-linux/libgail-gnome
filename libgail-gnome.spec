@@ -6,6 +6,7 @@ Release:	2
 License:	LGPL
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	a4282efd9827ba4002590e0c442ab77f
 URL:		http://developer.gnome.org/projects/gap
 BuildRequires:	autoconf
 BuildRequires:	automake
