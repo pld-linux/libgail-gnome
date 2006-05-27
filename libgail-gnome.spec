@@ -2,7 +2,7 @@ Summary:	Accessibility implementation for GTK+ and GNOME libraries
 Summary(pl):	Implementacja u³atwiania pracy niepe³nosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
 Version:	1.1.3
-Release:	2
+Release:	3
 License:	LGPL
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/libgail-gnome/1.1/%{name}-%{version}.tar.bz2
@@ -13,13 +13,14 @@ BuildRequires:	atk-devel >= 1.8.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gail-devel
-BuildRequires:	gnome-panel-devel >= 2.0.0
+BuildRequires:	gnome-panel-devel >= 2.14.0
 BuildRequires:	gtk+2-devel >= 2:2.4.0
-BuildRequires:	libbonoboui-devel >= 2.1.0
-BuildRequires:	libgnomeui-devel >= 2.1.0
+BuildRequires:	libbonoboui-devel >= 2.14.0
+BuildRequires:	libgnomeui-devel >= 2.14.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 Requires:	atk >= 1.8.0
+Requires:	libgnomeui >= 2.14.0
 Obsoletes:	libgail-gnome-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
