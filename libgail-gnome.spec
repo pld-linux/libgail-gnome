@@ -1,5 +1,5 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
-Summary(pl):	Implementacja u≥atwiania pracy niepe≥nosprawnym dla GTK+ i GNOME
+Summary(pl.UTF-8):   Implementacja u≈Çatwiania pracy niepe≈Çnosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
 Version:	1.1.3
 Release:	3
@@ -29,14 +29,14 @@ GAIL implements the abstract interfaces found in ATK for GTK+ and
 GNOME libraries, enabling accessibility technologies such as at-spi to
 access those GUIs.
 
-%description -l pl
-GAIL jest implementacj± abstrakcyjnych interfejsÛw z ATK dla bibliotek
-GTK+ i GNOME, umoøliwiaj±c± korzystanie z technik takich jak at-spi,
-aby u≥atwiÊ niepe≥nosprawnym korzystanie z tych GUI.
+%description -l pl.UTF-8
+GAIL jest implementacjƒÖ abstrakcyjnych interfejs√≥w z ATK dla bibliotek
+GTK+ i GNOME, umo≈ºliwiajƒÖcƒÖ korzystanie z technik takich jak at-spi,
+aby u≈Çatwiƒá niepe≈Çnosprawnym korzystanie z tych GUI.
 
 %package devel
 Summary:	Header files to compile applications that use libgail-gnome
-Summary(pl):	Pliki nag≥Ûwkowe libgail-gnome
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	atk-devel >= 1.8.0
@@ -47,9 +47,9 @@ Requires:	libbonoboui-devel >= 2.1.0
 gail-devel contains the header files required to compile applications
 against the GAIL libraries.
 
-%description devel -l pl
-Pakiet gail-devel zawiera pliki nag≥Ûwkowe potrzebne do kompilowania
-aplikacji uøywaj±cych bibliotek GAIL.
+%description devel -l pl.UTF-8
+Pakiet gail-devel zawiera pliki nag≈Ç√≥wkowe potrzebne do kompilowania
+aplikacji u≈ºywajƒÖcych bibliotek GAIL.
 
 %prep
 %setup -q
