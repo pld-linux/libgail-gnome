@@ -1,5 +1,5 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
-Summary(pl.UTF-8):   Implementacja ułatwiania pracy niepełnosprawnym dla GTK+ i GNOME
+Summary(pl.UTF-8):	Implementacja ułatwiania pracy niepełnosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
 Version:	1.1.3
 Release:	3
@@ -36,7 +36,7 @@ aby ułatwić niepełnosprawnym korzystanie z tych GUI.
 
 %package devel
 Summary:	Header files to compile applications that use libgail-gnome
-Summary(pl.UTF-8):   Pliki nagłówkowe libgail-gnome
+Summary(pl.UTF-8):	Pliki nagłówkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	atk-devel >= 1.8.0
