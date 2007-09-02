@@ -1,26 +1,26 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
 Summary(pl.UTF-8):	Implementacja ułatwiania pracy niepełnosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
-Version:	1.18.0
+Version:	1.19.5
 Release:	1
 License:	LGPL
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/libgail-gnome/1.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	2dd239118bf252c7b1e3d1701cd8a954
+Source0:	http://ftp.gnome.org/pub/gnome/sources/libgail-gnome/1.19/%{name}-%{version}.tar.bz2
+# Source0-md5:	30cdcc9b9c43cc9d5e22caffae045e41
 URL:		http://developer.gnome.org/projects/gap/
-BuildRequires:	at-spi-devel >= 1.18.0
-BuildRequires:	atk-devel >= 1:1.18.0
+BuildRequires:	at-spi-devel >= 1.19.5
+BuildRequires:	atk-devel >= 1:1.19.6
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gail-devel
-BuildRequires:	gnome-panel-devel >= 2.17.92
-BuildRequires:	gtk+2-devel >= 2:2.10.9
-BuildRequires:	libbonoboui-devel >= 2.18.0
-BuildRequires:	libgnomeui-devel >= 2.18.0
+BuildRequires:	gnome-panel-devel >= 2.19.6
+BuildRequires:	gtk+2-devel >= 2:2.11.6
+BuildRequires:	libbonoboui-devel >= 2.19.6
+BuildRequires:	libgnomeui-devel >= 2.19.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
-Requires:	atk >= 1:1.18.0
-Requires:	libgnomeui >= 2.18.0
+Requires:	atk >= 1:1.19.6
+Requires:	libgnomeui >= 2.19.1
 Obsoletes:	libgail-gnome-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,9 +39,9 @@ Summary:	Header files to compile applications that use libgail-gnome
 Summary(pl.UTF-8):	Pliki nagłówkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	atk-devel >= 1:1.18.0
-Requires:	gtk+2-devel >= 2:2.10.9
-Requires:	libbonoboui-devel >= 2.18.0
+Requires:	atk-devel >= 1:1.19.6
+Requires:	gtk+2-devel >= 2:2.11.6
+Requires:	libbonoboui-devel >= 2.19.6
 
 %description devel
 gail-devel contains the header files required to compile applications
