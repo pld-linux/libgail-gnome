@@ -5,7 +5,7 @@ Version:	1.20.0
 Release:	1
 License:	LGPL
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/libgail-gnome/1.20/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgail-gnome/1.20/%{name}-%{version}.tar.bz2
 # Source0-md5:	5a7662e3d637c86baa95a50adb225e56
 URL:		http://developer.gnome.org/projects/gap/
 BuildRequires:	at-spi-devel >= 1.20.0
@@ -39,7 +39,7 @@ Summary:	Header files to compile applications that use libgail-gnome
 Summary(pl.UTF-8):	Pliki nagłówkowe libgail-gnome
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	atk-devel >= 1:1.18.0
+Requires:	atk-devel >= 1:1.20.0
 Requires:	gtk+2-devel >= 2:2.10.9
 Requires:	libbonoboui-devel >= 2.18.0
 
