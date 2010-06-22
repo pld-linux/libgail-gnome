@@ -1,13 +1,14 @@
 Summary:	Accessibility implementation for GTK+ and GNOME libraries
 Summary(pl.UTF-8):	Implementacja ułatwiania pracy niepełnosprawnym dla GTK+ i GNOME
 Name:		libgail-gnome
-Version:	1.20.2
+Version:	1.20.3
 Release:	1
 License:	LGPL
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgail-gnome/1.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	b58d4f6903e4d5c8b01c6694b41c5a22
+# Source0-md5:	11fde9cc917c2572c87bfda10cc52751
 URL:		http://developer.gnome.org/projects/gap/
+BuildRequires:	GConf2-devel
 BuildRequires:	at-spi-devel >= 1.24.0
 BuildRequires:	atk-devel >= 1:1.24.0
 BuildRequires:	autoconf >= 2.53
@@ -19,6 +20,7 @@ BuildRequires:	libbonoboui-devel >= 2.24.0
 BuildRequires:	libgnomeui-devel >= 2.24.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+Requires(post,preun):	GConf2
 Requires:	atk >= 1:1.24.0
 Requires:	libgnomeui >= 2.24.0
 Obsoletes:	libgail-gnome-static
@@ -74,10 +76,17 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/modules/*.la
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+%gconf_schema_install libgail-gnome.schemas
+
+%preun
+%gconf_schema_uninstall libgail-gnome.schemas
+
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/gtk-2.0/modules/libgail-gnome.so
+%{_sysconfdir}/gconf/schemas/libgail-gnome.schemas
 
 %files devel
 %defattr(644,root,root,755)
